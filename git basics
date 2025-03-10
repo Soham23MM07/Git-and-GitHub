@@ -106,5 +106,19 @@ create a ssh key use docs to get help and then paste that ssh key to github sett
 git remote add origin link
 git remote -v
 git remote rename orgin origin
+git remote remove origin
 git push -u origin main --> origin is the name of repo in github
 
+
+// git clone
+git clone link
+
+
+// git pull and git fetch
+work  |   stage   |   local repo   |      remote repo 
+      |           |                |   present inside github 
+      |           |                |   
+
+git fetch bring the code from github repo which is remote repo to local repo
+
+git pull bring the code from github repo which is remote repo to work area
