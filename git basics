@@ -1,0 +1,110 @@
+git is software  
+github is service (cloud)
+
+Git
+
+1>gitone -->
+1>.git --> hidden folder
+
+2>git status
+On branch master
+No commits yet
+nothing to commit (create/copy files and use "git add" to track)
+
+3>commit --> check point in the game
+
+write-->add-->commit
+working area
+1>git add ----
+staging area
+2>git commit
+Repo
+3>git push
+Github
+
+git log --> how many commit messages are there
+
+git config --global user.name "Soham Ghag"
+git config --global user.email "---"
+
+// backend of git file
+.git ---> hooks --> same as react's pre and post hooks
+----> head --> head is pointing to master branch which you will see in refs folder
+
+// create new branch
+git branch _Name_of_new_branch_
+
+// switch head from master to new branch
+git checkout _Name_of_new_branch_
+
+// creating new file in new branch
+1>the files which were already there in master while copy into new branch and the files which a user make in new branch will not rendered on the master branch untill or unless you merge them
+2>master and newbranch are completely in differen timeline
+
+// merging of the branch
+while merging any _new_branch_ please make ensure that you should on main or master branch and bring that _new_branch_ into main branch
+git merge _branch_name_
+so main or master branch which move forward and add a new branch commit there ---> Fast-Forward in time
+
+// deleting branch
+now as you got the content from the nav-bar branch to your main or master branch now it's time to delete the branch
+git branch -d _Branch_Name_
+
+// confilts in git
+master branch ---> index.html ---> footer is add
+
+footer branch ---> copy the index.html from master ---> footer is added successfully
+now on two branches in same folder we have written two different statements and each of this statement is present in perspective
+branch but when we merge it it's going to be conflict --> no worries
+
+// git diff 
+it is used to compare between two same file in different stages 
+file 1 at 10am 
+file 2 at 11am 
+same file with after some time
+---- a/index.html 
+++++ b/index.html
+always do this command 
+add something in html file and commit 
+make changes in that file  and add it to the staging area
+and then use this command
+git diff --staged 
+
+// git stash
+your were working on the file which was present in main or master branch and you did a  git add command and you forgot it to commit then you can your branch 
+you will get this kind of error
+git checkout footer
+error: Your local changes to the following files would be overwritten by checkout:
+        index.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Here git stash comes into picture that without doing commit you can move to another branch with the help of footer branch
+
+git stash
+with the help of stash you can pop your changes into any branch irrespective of your working branch
+
+be carefull using stash pop command 
+git stash pop
+always use below command to check how many stashes are present 
+git stash list 
+use below command to use a particular stash
+git stash apply {Name of stash=stash@{3}}  
+
+// git rebase 
+
+never do rebasing when your on master branch please 
+move to some another branch for ex footer
+then git rebase master --> correct command
+
+
+//Github
+as we are using command line connection between git and github is not possible through email and password we have to set ssh key to github settings and in our system
+
+create a ssh key use docs to get help and then paste that ssh key to github setting --> authetication key --> paste the key
+
+git remote add origin link
+git remote -v
+git remote rename orgin origin
+git push -u origin main --> origin is the name of repo in github
+
