@@ -98,7 +98,7 @@ move to some another branch for ex footer
 then git rebase master --> correct command
 
 
-//Github
+// Github
 as we are using command line connection between git and github is not possible through email and password we have to set ssh key to github settings and in our system
 
 create a ssh key use docs to get help and then paste that ssh key to github setting --> authetication key --> paste the key
@@ -112,6 +112,7 @@ git push -u origin main --> origin is the name of repo in github
 
 // git clone
 git clone link
+once you cloned the website remote will implicitly connected 
 
 
 // git pull and git fetch
@@ -122,3 +123,16 @@ work  |   stage   |   local repo   |      remote repo
 git fetch bring the code from github repo which is remote repo to local repo
 
 git pull bring the code from github repo which is remote repo to work area
+
+
+// git pull request 
+
+clone the repo 
+create an another branch
+made some changes and push it to github
+compare and pull request 
+type your message carefully
+
+person will check the code and merge your code to main or master branch
+
+# ReadMe.md (markdown syntax)
